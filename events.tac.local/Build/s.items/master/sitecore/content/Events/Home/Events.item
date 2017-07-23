@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {FDB2A279-0324-4FA4-8D5C-283541D9BEBD}
+database: master
+path: /sitecore/content/Events/Home/Events
+parent: {67CB38E4-F722-4C09-BA86-0C32924C58C7}
+name: Events
+master: {00000000-0000-0000-0000-000000000000}
+template: {CB44D959-7642-4C65-B769-6294B73E8E99}
+templatekey: Events Section
+created: 20170715T061917:636356963573070000
+
+----field----
+field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
+name: __Subitems Sorting
+key: __subitems sorting
+content-length: 38
+
+{781247D2-9785-400F-8935-C818EC757967}
+----version----
+language: en
+version: 1
+revision: ff62d421-d27f-4c54-a5dd-a5ff2c424fa5
+
+----field----
+field: {1384A77F-8E0C-40BA-B628-3C5ED330DD86}
+name: ContentHeading
+key: contentheading
+content-length: 6
+
+Events
+----field----
+field: {F35DACEC-61A9-49C5-90BD-05E58F0C7727}
+name: MetaTitle
+key: metatitle
+content-length: 6
+
+Events
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170715T061917Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ff62d421-d27f-4c54-a5dd-a5ff2c424fa5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170718T040101Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

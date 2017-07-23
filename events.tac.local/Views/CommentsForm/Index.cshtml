@@ -1,0 +1,24 @@
+﻿@*@using TAC.Utils.Helpers*@
+
+<script src="/sitecore/shell/client/services/assets/lib/itemservice.js"></script>
+<script src="/Scripts/commentsform.js"></script>
+
+<div>
+    @*@using (Html.BeginForm())
+    {
+        @Html.FormHandler()
+        <div>
+            <input type="text" class="form-control" placeholder="Name" name="email">
+            <input type="text" class="form-control" placeholder="Add your comment here" name="comment">
+        </div>
+        <input type="submit" class="btn btn-default" value="Submit Comment">
+    }*@    
+
+    <form onsubmit="createCommentItem(this, '@RenderingContext.Current.ContextItem.Paths.FullPath')">
+        <div>
+            <input type="text" class="form-control" placeholder="Name" name="email">
+            <input type="text" class="form-control" placeholder="Add your comment here" name="comment">
+        </div>
+        <input type="submit" class="btn btn-default" value="Submit Comment">
+    </form>
+</div>

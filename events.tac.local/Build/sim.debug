@@ -1,0 +1,354 @@
+   1 15:23:45,883 INFO  **********************************************************************
+   1 15:23:45,909 INFO  **********************************************************************
+   1 15:23:45,910 INFO  Sitecore Instance Manager started
+   1 15:23:45,910 INFO  Version: 1.5.0.112
+   1 15:23:45,910 INFO  Revision: 0.112
+   1 15:23:45,910 INFO  Label: 
+   1 15:23:45,910 INFO  IsQA: False
+   1 15:23:45,910 INFO  Executable: C:\Users\erics\AppData\Roaming\Sitecore\Sitecore Instance manager\Apps\SIMCMD\sim.exe
+   1 15:23:45,910 INFO  Arguments: delete|-n|production
+   1 15:23:45,910 INFO  Directory: C:\Users\erics\Documents\beanstalk\events.tac.local\events.tac.local\Build
+   1 15:23:45,911 INFO  **********************************************************************
+   1 15:23:45,911 INFO  **********************************************************************
+   1 15:23:45,918 DEBUG               Insights - starting
+   1 15:23:46,020 DEBUG               Insights - started
+   1 15:23:46,762 DEBUG               params defaultRootFolder: null
+   1 15:23:46,765 DEBUG               -> Getting operable sites
+   1 15:23:46,765 DEBUG                  params context: object (SIM.Adapters.WebServer.WebServerManager+WebServerContext)
+   1 15:23:46,765 DEBUG                  params defaultRootFolder: null
+   1 15:23:46,995 DEBUG                  return ICollection, 7 elements
+   1 15:23:46,997 DEBUG   231.28ms    -  Getting operable sites
+   1 15:23:46,998 DEBUG               -> Getting partially cached Sitecore instances
+   1 15:23:46,998 DEBUG                  params sites: ICollection, 7 elements
+   1 15:23:47,005 DEBUG                  InstanceManager:GetPartiallyCachedInstance(Site: 1)
+   1 15:23:47,260 DEBUG                  InstanceManager:GetPartiallyCachedInstance(Site: 2)
+   1 15:23:47,368 DEBUG                  InstanceManager:GetPartiallyCachedInstance(Site: 3)
+   1 15:23:47,413 DEBUG                  InstanceManager:GetPartiallyCachedInstance(Site: 4)
+   1 15:23:47,505 DEBUG                  InstanceManager:GetPartiallyCachedInstance(Site: 5)
+   1 15:23:47,531 DEBUG                  InstanceManager:GetPartiallyCachedInstance(Site: 6)
+   1 15:23:47,555 DEBUG                  InstanceManager:GetPartiallyCachedInstance(Site: 7)
+   1 15:23:47,760 DEBUG                  return ICollection, 2 elements
+   1 15:23:47,760 DEBUG   761.66ms    -  Getting partially cached Sitecore instances
+   1 15:23:47,761 DEBUG               -> Get instances
+   1 15:23:47,763 DEBUG               -> -> Get instance by id
+   1 15:23:47,763 DEBUG                     params id: 5 (System.Int64)
+   1 15:23:47,807 DEBUG                     return ID: 5, jobs.tac.local (Sitecore CMS 8.2 rev. 160729) (SIM.Instances.Instance)
+   1 15:23:47,807 DEBUG    44.31ms    -  -  Get instance by id
+   1 15:23:47,807 DEBUG               -> -> Get instance by id
+   1 15:23:47,807 DEBUG                     params id: 6 (System.Int64)
+   1 15:23:47,843 DEBUG                     return ID: 6, ssd.tac.local (Sitecore CMS 8.2 rev. 160729) (SIM.Instances.Instance)
+   1 15:23:47,843 DEBUG    35.13ms    -  -  Get instance by id
+   1 15:23:47,843 DEBUG                  return ICollection, 2 elements
+   1 15:23:47,843 DEBUG    81.14ms    -  Get instances
+   1 15:23:47,903 INFO  DeleteCommandFacade command has failed with unhandled exception
+System.InvalidOperationException: Cannot find instances by name: production
+   at SIM.Core.Common.AbstractMultiInstanceActionCommand.GetInstances(String listString)
+   at SIM.Core.Common.AbstractMultiInstanceActionCommand.DoExecute(CommandResult result)
+   at SIM.Core.Common.AbstractCommand.Execute()
+   1 15:23:48,959 INFO  **********************************************************************
+   1 15:23:48,983 INFO  **********************************************************************
+   1 15:23:48,983 INFO  Sitecore Instance Manager started
+   1 15:23:48,983 INFO  Version: 1.5.0.112
+   1 15:23:48,983 INFO  Revision: 0.112
+   1 15:23:48,983 INFO  Label: 
+   1 15:23:48,983 INFO  IsQA: False
+   1 15:23:48,984 INFO  Executable: C:\Users\erics\AppData\Roaming\Sitecore\Sitecore Instance manager\Apps\SIMCMD\sim.exe
+   1 15:23:48,984 INFO  Arguments: install|-n|production
+   1 15:23:48,984 INFO  Directory: C:\Users\erics\Documents\beanstalk\events.tac.local\events.tac.local\Build
+   1 15:23:48,984 INFO  **********************************************************************
+   1 15:23:48,984 INFO  **********************************************************************
+   1 15:23:48,990 DEBUG               Insights - starting
+   1 15:23:49,070 DEBUG               Insights - started
+   1 15:23:49,667 DEBUG               -> Refresh product manager
+   1 15:23:49,668 DEBUG                  params localRepository: "C:\Sitecore\Repo"
+   1 15:23:49,669 DEBUG               -> -> Get product files
+   1 15:23:49,669 DEBUG                     params localRepository: "C:\Sitecore\Repo"
+   1 15:23:49,670 DEBUG                     return ICollection, 1 elements
+   1 15:23:49,671 DEBUG     1.26ms    -  -  Get product files
+   1 15:23:49,673 DEBUG               -> -> Refresh product manager
+   1 15:23:49,673 DEBUG                     params zipFiles: ICollection, 1 elements
+   1 15:23:49,673 DEBUG               -> -> -> Process file
+   1 15:23:49,674 DEBUG                        params file: "C:\Sitecore\Repo\Sitecore 8.2 rev. 160729.zip"
+   1 15:23:49,734 DEBUG               -> -> -> -> Is it package or not
+   1 15:23:49,734 DEBUG                           params packagePath: "C:\Sitecore\Repo\Sitecore 8.2 rev. 160729.zip"
+   1 15:23:49,734 DEBUG                           params manifest: object (SIM.XmlDocumentEx)
+   1 15:23:49,734 DEBUG                           return False (System.Boolean)
+   1 15:23:49,734 DEBUG     0.38ms    -  -  -  -  Is it package or not
+   1 15:23:49,734 DEBUG                        return "Added"
+   1 15:23:49,734 DEBUG    60.71ms    -  -  -  Process file
+   1 15:23:49,735 DEBUG    62.56ms    -  -  Refresh product manager
+   1 15:23:49,735 DEBUG    68.57ms    -  Refresh product manager
+   1 15:23:49,744 DEBUG               Pipelines RAW configuration: <pipelines><install title="Installing the {InstanceName} instance"><step><processor type="SIM.Pipelines.Install.CheckPackageIntegrity, SIM.Pipelines" title="Validating install package" /></step><step><processor type="SIM.Pipelines.Install.GrantPermissions, SIM.Pipelines" title="Granting permissions" /><processor type="SIM.Pipelines.Install.Extract, SIM.Pipelines" title="Extracting files"><processor type="SIM.Pipelines.Install.CopyLicense, SIM.Pipelines" title="Copying license" /><processor type="SIM.Pipelines.Install.SetupWebsite, SIM.Pipelines" title="Configuring IIS website" /><processor type="SIM.Pipelines.Install.UpdateWebConfig, SIM.Pipelines" title="Setting data folder" /><processor type="SIM.Pipelines.Install.AddServerTxt, SIM.Pipelines" title="Adding server.txt file" /></processor><processor type="SIM.Pipelines.Install.UpdateHosts, SIM.Pipelines" title="Updating hosts file" /><processor type="SIM.Pipelines.Install.InstallRoles, SIM.Pipelines" title="Installing configuration roles" /></step><step><processor type="SIM.Pipelines.Install.AttachDatabases, SIM.Pipelines" title="Attaching databases" /></step><step><processor type="SIM.Pipelines.Install.Modules.InstallActions, SIM.Pipelines" param="archive" title="Modules: installing archive-based modules" /><processor type="SIM.Pipelines.Install.Modules.CopyAgentFiles, SIM.Pipelines" title="Modules: copying agent files"><processor type="SIM.Pipelines.Install.Modules.CopyPackages, SIM.Pipelines" title="Modules: copying packages"><processor type="SIM.Pipelines.Install.Modules.InstallActions, SIM.Pipelines" param="package|before" title="Modules: performing pre-install actions"><processor type="SIM.Pipelines.Install.Modules.StartInstance, SIM.Pipelines" title="Modules: starting instance"><processor type="SIM.Pipelines.Install.Modules.InstallPackages, SIM.Pipelines" title="Modules: installing packages"><processor type="SIM.Pipelines.Install.Modules.StartInstance, SIM.Pipelines" title="Modules: starting instance (again)"><processor type="SIM.Pipelines.Install.Modules.PerformPostStepActions, SIM.Pipelines" title="Modules: performing post-step actions"><processor type="SIM.Pipelines.Install.Modules.InstallActions, SIM.Pipelines" param="package|after" title="Modules: performing post-install actions"><processor type="SIM.Pipelines.Install.Modules.DeleteAgentPages, SIM.Pipelines" title="Modules: agent files" /></processor></processor></processor></processor></processor></processor></processor></processor></step><step><processor type="SIM.Pipelines.Install.Modules.StartInstance, SIM.Pipelines" title="Starting instance" param="nowait" /></step></install><multipleDeletion title="Multiple deletion"><step><processor type="SIM.Pipelines.MultipleDeletion.MultipleDeletion, SIM.Pipelines" title="Deleting the selected instances" /></step></multipleDeletion><delete title="Deleting the {InstanceName} instance"><step><processor type="SIM.Pipelines.Delete.CollectData, SIM.Pipelines" title="Collecting data" /></step><step><processor type="SIM.Pipelines.Delete.DeleteRegistryKey, SIM.Pipelines" title="Deleting registry key" /><processor type="SIM.Pipelines.Delete.StopInstance, SIM.Pipelines" title="Stopping application" /><processor type="SIM.Pipelines.Delete.DeleteDataFolder, SIM.Pipelines" title="Deleting data folder" /><processor type="SIM.Pipelines.Delete.DeleteDatabases, SIM.Pipelines" title="Deleting databases" /><processor type="SIM.Pipelines.Delete.DeleteMongoDatabases, SIM.Pipelines" title="Deleting databases" /><processor type="SIM.Pipelines.Delete.DeleteWebsiteFolder, SIM.Pipelines" title="Deleting website folder" /></step><step><processor type="SIM.Pipelines.Delete.DeleteRootFolder, SIM.Pipelines" title="Deleting root folder" /></step><step><processor type="SIM.Pipelines.Delete.DeleteWebsite, SIM.Pipelines" title="Deleting website" /><processor type="SIM.Pipelines.Delete.UpdateHosts, SIM.Pipelines" title="Updating the hosts file" /></step></delete><reinstall title="Reinstalling the {InstanceName} instance"><step><processor type="SIM.Pipelines.Reinstall.CheckPackageIntegrity, SIM.Pipelines" title="Validating package" /></step><step><processor type="SIM.Pipelines.Reinstall.StopInstance, SIM.Pipelines" title="Stopping application" /><processor type="SIM.Pipelines.Reinstall.DeleteDataFolder, SIM.Pipelines" title="Deleting data folder" /><processor type="SIM.Pipelines.Reinstall.DeleteDatabases, SIM.Pipelines" title="Deleting databases" /><processor type="SIM.Pipelines.Reinstall.DeleteWebsite, SIM.Pipelines" title="Deleting IIS website" /><processor type="SIM.Pipelines.Reinstall.DeleteWebsiteFolder, SIM.Pipelines" title="Deleting website folder" /></step><step><processor type="SIM.Pipelines.Reinstall.DeleteRootFolder, SIM.Pipelines" title="Recreating root folder" /></step><step><processor type="SIM.Pipelines.Reinstall.Extract, SIM.Pipelines" title="Extracting files"><processor type="SIM.Pipelines.Reinstall.CopyLicense, SIM.Pipelines" title="Copying license" /><processor type="SIM.Pipelines.Reinstall.SetupWebsite, SIM.Pipelines" title="Configuring IIS website" /><processor type="SIM.Pipelines.Reinstall.UpdateWebConfig, SIM.Pipelines" title="Setting the data folder" /><processor type="SIM.Pipelines.Reinstall.AddServerTxt, SIM.Pipelines" title="Adding server.txt file" /><processor type="SIM.Pipelines.Reinstall.DeleteTempFolder, SIM.Pipelines" title="Collecting garbage" /></processor></step><step><processor type="SIM.Pipelines.Reinstall.AttachDatabases, SIM.Pipelines" title="Attaching databases" /></step><step><processor type="SIM.Pipelines.Reinstall.StartInstance, SIM.Pipelines" title="Starting instance" param="nowait" /></step></reinstall><installmodules title="Installing modules to the {InstanceName} instance"><processor type="SIM.Pipelines.InstallModules.InstallActions, SIM.Pipelines" param="archive" title="Installing archive-based modules" /><processor type="SIM.Pipelines.InstallModules.CopyAgentFiles, SIM.Pipelines" title="Copying agent files"><processor type="SIM.Pipelines.InstallModules.CopyPackages, SIM.Pipelines" title="Copying packages into Website folder"><processor type="SIM.Pipelines.InstallModules.InstallActions, SIM.Pipelines" param="package|before" title="Performing pre-install actions"><processor type="SIM.Pipelines.InstallModules.StartInstance, SIM.Pipelines" title="Starting the instance"><processor type="SIM.Pipelines.InstallModules.InstallPackages, SIM.Pipelines" title="Installing the packages"><processor type="SIM.Pipelines.InstallModules.StartInstance, SIM.Pipelines" title="Starting the instance (again)"><processor type="SIM.Pipelines.InstallModules.PerformPostStepActions, SIM.Pipelines" title="Performing post-step actions"><processor type="SIM.Pipelines.InstallModules.InstallActions, SIM.Pipelines" param="package|after" title="Performing post-install actions"><processor type="SIM.Pipelines.InstallModules.DeleteAgentPages, SIM.Pipelines" title="Deleting agent files"><processor type="SIM.Pipelines.InstallModules.StartInstance, SIM.Pipelines" title="Starting instance" param="nowait" /></processor></processor></processor></processor></processor></processor></processor></processor></processor></installmodules><backup title="Backing up the {InstanceName} instance"><processor type="SIM.Pipelines.Backup.BackupDatabases, SIM.Pipelines" title="Backing up databases" /><processor type="SIM.Pipelines.Backup.BackupMongoDatabases, SIM.Pipelines" title="Backing up MongoDB databases" /><processor type="SIM.Pipelines.Backup.BackupFiles, SIM.Pipelines" title="Backing up files" /></backup><restore title="Restoring the {InstanceName} instance"><processor type="SIM.Pipelines.Restore.RestoreDatabases, SIM.Pipelines" title="Restoring databases" /><processor type="SIM.Pipelines.Restore.RestoreMongoDatabases, SIM.Pipelines" title="Restoring MongoDB databases" /><processor type="SIM.Pipelines.Restore.DeleteFiles, SIM.Pipelines" title="Deleting files"><processor type="SIM.Pipelines.Restore.RestoreFiles, SIM.Pipelines" title="Restoring files" /></processor></restore><export title="Exporting the {InstanceName} instance"><step><processor type="SIM.Pipelines.Export.ExportDatabases, SIM.Pipelines" title="Exporting databases" /><processor type="SIM.Pipelines.Export.ExportMongoDatabases, SIM.Pipelines" title="Exporting MongoDB databases" /></step><step><processor type="SIM.Pipelines.Export.ExportFiles, SIM.Pipelines" title="Exporting files" /></step><step><processor type="SIM.Pipelines.Export.ExportSettings, SIM.Pipelines" title="Exporting settings" /></step><step><processor type="SIM.Pipelines.Export.ExportPostActions, SIM.Pipelines" title="Assembling zip package" /></step></export><import title="Importing instance"><processor type="SIM.Pipelines.Import.ImportInitialization, SIM.Pipelines" title="Initialization"><processor type="SIM.Pipelines.Import.ImportRestoreDatabases, SIM.Pipelines" title="Restore databases" /><processor type="SIM.Pipelines.Import.ImportRestoreMongoDatabases, SIM.Pipelines" title="Restore MongoDB databases" /><processor type="SIM.Pipelines.Import.ImportUnpackSolution, SIM.Pipelines" title="Unpack solution"><processor type="SIM.Pipelines.Import.UpdateConnectionStrings, SIM.Pipelines" title="Update connection strings" /><processor type="SIM.Pipelines.Import.UpdateDataFolder, SIM.Pipelines" title="Update data folder" /><processor type="SIM.Pipelines.Import.UpdateLicense, SIM.Pipelines" title="Update license" /></processor><processor type="SIM.Pipelines.Import.ImportRegisterWebsite, SIM.Pipelines" title="Update IIS metabase" /><processor type="SIM.Pipelines.Import.ImportHostNames, SIM.Pipelines" title="Update hosts file" /></processor></import></pipelines>
+   1 15:23:52,217 INFO  Pipeline 'install' starts, isAsync: False
+   1 15:23:52,217 DEBUG               -> Start pipeline
+   1 15:23:52,217 DEBUG                  params pipelineName: "install"
+   1 15:23:52,217 DEBUG                  params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:23:52,217 DEBUG                  params pipelineController: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:23:52,217 DEBUG                  params isAsync: False (System.Boolean)
+   1 15:23:52,220 DEBUG               -> -> Create pipeline
+   1 15:23:52,220 DEBUG                     params pipelineName: "install"
+   1 15:23:52,220 DEBUG                     params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:23:52,220 DEBUG                     params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:23:52,220 DEBUG                     params isAsync: False (System.Boolean)
+   1 15:23:52,271 DEBUG               -> -> -> Create object
+   1 15:23:52,271 DEBUG                        params type: SIM.Pipelines.Install.CheckPackageIntegrity (System.RuntimeType)
+   1 15:23:52,271 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,298 DEBUG                        return (empty processor) (SIM.Pipelines.Install.CheckPackageIntegrity)
+   1 15:23:52,298 DEBUG    26.62ms    -  -  -  Create object
+   1 15:23:52,300 DEBUG               -> -> -> Create object
+   1 15:23:52,300 DEBUG                        params type: SIM.Pipelines.Install.GrantPermissions (System.RuntimeType)
+   1 15:23:52,300 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,300 DEBUG                        return (empty processor) (SIM.Pipelines.Install.GrantPermissions)
+   1 15:23:52,300 DEBUG     0.28ms    -  -  -  Create object
+   1 15:23:52,300 DEBUG               -> -> -> Create object
+   1 15:23:52,300 DEBUG                        params type: SIM.Pipelines.Install.Extract (System.RuntimeType)
+   1 15:23:52,300 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,300 DEBUG                        return (empty processor) (SIM.Pipelines.Install.Extract)
+   1 15:23:52,301 DEBUG     0.22ms    -  -  -  Create object
+   1 15:23:52,301 DEBUG               -> -> -> Create object
+   1 15:23:52,301 DEBUG                        params type: SIM.Pipelines.Install.CopyLicense (System.RuntimeType)
+   1 15:23:52,301 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,301 DEBUG                        return (empty processor) (SIM.Pipelines.Install.CopyLicense)
+   1 15:23:52,301 DEBUG     0.22ms    -  -  -  Create object
+   1 15:23:52,301 DEBUG               -> -> -> Create object
+   1 15:23:52,301 DEBUG                        params type: SIM.Pipelines.Install.SetupWebsite (System.RuntimeType)
+   1 15:23:52,301 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,301 DEBUG                        return (empty processor) (SIM.Pipelines.Install.SetupWebsite)
+   1 15:23:52,301 DEBUG     0.22ms    -  -  -  Create object
+   1 15:23:52,301 DEBUG               -> -> -> Create object
+   1 15:23:52,301 DEBUG                        params type: SIM.Pipelines.Install.UpdateWebConfig (System.RuntimeType)
+   1 15:23:52,301 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,301 DEBUG                        return (empty processor) (SIM.Pipelines.Install.UpdateWebConfig)
+   1 15:23:52,301 DEBUG     0.21ms    -  -  -  Create object
+   1 15:23:52,301 DEBUG               -> -> -> Create object
+   1 15:23:52,301 DEBUG                        params type: SIM.Pipelines.Install.AddServerTxt (System.RuntimeType)
+   1 15:23:52,301 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,302 DEBUG                        return (empty processor) (SIM.Pipelines.Install.AddServerTxt)
+   1 15:23:52,302 DEBUG     0.30ms    -  -  -  Create object
+   1 15:23:52,302 DEBUG               -> -> -> Create object
+   1 15:23:52,302 DEBUG                        params type: SIM.Pipelines.Install.UpdateHosts (System.RuntimeType)
+   1 15:23:52,302 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,302 DEBUG                        return (empty processor) (SIM.Pipelines.Install.UpdateHosts)
+   1 15:23:52,302 DEBUG     0.23ms    -  -  -  Create object
+   1 15:23:52,302 DEBUG               -> -> -> Create object
+   1 15:23:52,302 DEBUG                        params type: SIM.Pipelines.Install.InstallRoles (System.RuntimeType)
+   1 15:23:52,302 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,302 DEBUG                        return (empty processor) (SIM.Pipelines.Install.InstallRoles)
+   1 15:23:52,302 DEBUG     0.44ms    -  -  -  Create object
+   1 15:23:52,302 DEBUG               -> -> -> Create object
+   1 15:23:52,303 DEBUG                        params type: SIM.Pipelines.Install.AttachDatabases (System.RuntimeType)
+   1 15:23:52,303 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,303 DEBUG                        return (empty processor) (SIM.Pipelines.Install.AttachDatabases)
+   1 15:23:52,303 DEBUG     0.43ms    -  -  -  Create object
+   1 15:23:52,303 DEBUG               -> -> -> Create object
+   1 15:23:52,303 DEBUG                        params type: SIM.Pipelines.Install.Modules.InstallActions (System.RuntimeType)
+   1 15:23:52,303 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,303 DEBUG                        return (empty processor) (SIM.Pipelines.Install.Modules.InstallActions)
+   1 15:23:52,303 DEBUG     0.43ms    -  -  -  Create object
+   1 15:23:52,305 DEBUG               -> -> -> Create object
+   1 15:23:52,305 DEBUG                        params type: SIM.Pipelines.Install.Modules.CopyAgentFiles (System.RuntimeType)
+   1 15:23:52,305 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,305 DEBUG                        return (empty processor) (SIM.Pipelines.Install.Modules.CopyAgentFiles)
+   1 15:23:52,305 DEBUG     0.29ms    -  -  -  Create object
+   1 15:23:52,306 DEBUG               -> -> -> Create object
+   1 15:23:52,306 DEBUG                        params type: SIM.Pipelines.Install.Modules.StartInstance (System.RuntimeType)
+   1 15:23:52,306 DEBUG                        params objects: ICollection, 0 elements
+   1 15:23:52,307 DEBUG                        return (empty processor) (SIM.Pipelines.Install.Modules.StartInstance)
+   1 15:23:52,307 DEBUG     0.42ms    -  -  -  Create object
+   1 15:23:52,308 DEBUG                     return object (SIM.Pipelines.Pipeline)
+   1 15:23:52,308 DEBUG    87.87ms    -  -  Create pipeline
+   1 15:23:52,309 DEBUG               -> -> Start pipeline
+   1 15:23:52,309 DEBUG                     Caller: SIM.Pipelines.Pipeline
+   1 15:23:52,311 DEBUG               -> -> -> Replace pipeline variables in message
+   1 15:23:52,311 DEBUG                        params message: "Installing the {InstanceName} instance"
+   1 15:23:52,311 DEBUG                        params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:23:52,314 DEBUG                        return "Installing the production instance"
+   1 15:23:52,314 DEBUG     3.56ms    -  -  -  Replace pipeline variables in message
+   1 15:23:52,316 DEBUG               -> -> -> Execute pipeline processors
+   1 15:23:52,316 DEBUG                        params info: object (SIM.Pipelines.Pipeline+PipelineStartInfo)
+   1 15:23:52,599 DEBUG               -> -> -> -> Execute pipeline steps
+   1 15:23:52,599 DEBUG                           params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:23:52,599 DEBUG                           params steps: ICollection, 5 elements
+   1 15:23:52,599 DEBUG                           params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:23:52,599 DEBUG                           params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:23:52,600 DEBUG               -> -> -> -> -> Execute pipeline processors
+   1 15:23:52,600 DEBUG                              params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:23:52,600 DEBUG                              params processorList: ICollection, 1 elements
+   1 15:23:52,600 DEBUG                              params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:23:52,600 DEBUG                              params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:23:52,653 DEBUG               -> -> -> -> -> -> Execute pipeline processors
+   1 15:23:52,653 DEBUG                                 params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:23:52,653 DEBUG                                 params processorList: ICollection, 0 elements
+   1 15:23:52,653 DEBUG                                 params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:23:52,653 DEBUG                                 params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:23:52,653 DEBUG                                 return True (System.Boolean)
+   1 15:23:52,653 DEBUG     0.08ms    -  -  -  -  -  -  Execute pipeline processors
+   1 15:23:52,653 DEBUG                              return True (System.Boolean)
+   1 15:23:52,653 DEBUG    52.61ms    -  -  -  -  -  Execute pipeline processors
+   1 15:23:52,653 DEBUG               -> -> -> -> -> Execute pipeline processors
+   1 15:23:52,653 DEBUG                              params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:23:52,653 DEBUG                              params processorList: ICollection, 4 elements
+   1 15:23:52,653 DEBUG                              params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:23:52,653 DEBUG                              params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:23:52,709 INFO  Creating folder Sitecore 8.2 rev. 160729
+   1 15:23:52,710 INFO  Creating folder Sitecore 8.2 rev. 160729\Website
+   1 15:23:52,894 INFO  Granting full access for 'NT AUTHORITY\NETWORK SERVICE' identity to the 'Sitecore 8.2 rev. 160729\Website' folder
+   1 15:23:52,912 INFO  Creating folder Sitecore 8.2 rev. 160729\Data
+   1 15:23:52,918 INFO  Granting full access for 'NT AUTHORITY\NETWORK SERVICE' identity to the 'Sitecore 8.2 rev. 160729\Data' folder
+   1 15:23:52,925 DEBUG               -> -> -> -> -> -> Execute pipeline processors
+   1 15:23:52,926 DEBUG                                 params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:23:52,926 DEBUG                                 params processorList: ICollection, 0 elements
+   1 15:23:52,926 DEBUG                                 params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:23:52,926 DEBUG                                 params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:23:52,926 DEBUG                                 return True (System.Boolean)
+   1 15:23:52,926 DEBUG     0.54ms    -  -  -  -  -  -  Execute pipeline processors
+   1 15:23:52,941 INFO  Extracting C:\Sitecore\Repo\Sitecore 8.2 rev. 160729.zip
+   1 15:28:14,872 WARN  Unexpected file or directory is ignored: Sitecore 8.2 rev. 160729/
+   1 15:28:14,872 DEBUG               -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:14,873 DEBUG                                 params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:14,873 DEBUG                                 params processorList: ICollection, 4 elements
+   1 15:28:14,873 DEBUG                                 params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:14,873 DEBUG                                 params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:14,911 DEBUG               -> -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:14,911 DEBUG                                    params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:14,911 DEBUG                                    params processorList: ICollection, 0 elements
+   1 15:28:14,911 DEBUG                                    params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:14,911 DEBUG                                    params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:14,911 DEBUG                                    return True (System.Boolean)
+   1 15:28:14,911 DEBUG     0.07ms    -  -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:15,542 DEBUG               -> -> -> -> -> -> -> Get instance by id
+   1 15:28:15,542 DEBUG                                    params id: 8 (System.Int64)
+   1 15:28:15,606 DEBUG                                    return ID: 8, production (Sitecore CMS 8.2 rev. 160729) (SIM.Instances.Instance)
+   1 15:28:15,606 DEBUG    64.14ms    -  -  -  -  -  -  -  Get instance by id
+   1 15:28:15,606 DEBUG               -> -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:15,606 DEBUG                                    params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:15,606 DEBUG                                    params processorList: ICollection, 0 elements
+   1 15:28:15,606 DEBUG                                    params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:15,606 DEBUG                                    params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:15,606 DEBUG                                    return True (System.Boolean)
+   1 15:28:15,606 DEBUG     0.11ms    -  -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:16,069 DEBUG               -> -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:16,069 DEBUG                                    params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:16,069 DEBUG                                    params processorList: ICollection, 0 elements
+   1 15:28:16,069 DEBUG                                    params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:16,069 DEBUG                                    params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:16,069 DEBUG                                    return True (System.Boolean)
+   1 15:28:16,069 DEBUG     0.06ms    -  -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:16,070 DEBUG               -> -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:16,070 DEBUG                                    params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:16,070 DEBUG                                    params processorList: ICollection, 0 elements
+   1 15:28:16,070 DEBUG                                    params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:16,070 DEBUG                                    params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:16,070 DEBUG                                    return True (System.Boolean)
+   1 15:28:16,070 DEBUG     0.05ms    -  -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:16,070 DEBUG                                 return True (System.Boolean)
+   1 15:28:16,070 DEBUG 1197.55ms    -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:16,072 INFO  Appending host: production
+   1 15:28:16,230 DEBUG               -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:16,230 DEBUG                                 params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:16,230 DEBUG                                 params processorList: ICollection, 0 elements
+   1 15:28:16,230 DEBUG                                 params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:16,230 DEBUG                                 params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:16,230 DEBUG                                 return True (System.Boolean)
+   1 15:28:16,230 DEBUG     0.12ms    -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:16,231 DEBUG               -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:16,231 DEBUG                                 params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:16,231 DEBUG                                 params processorList: ICollection, 0 elements
+   1 15:28:16,231 DEBUG                                 params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:16,231 DEBUG                                 params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:16,231 DEBUG                                 return True (System.Boolean)
+   1 15:28:16,231 DEBUG     0.15ms    -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:16,231 DEBUG                              return True (System.Boolean)
+   1 15:28:16,231 DEBUG 263577.97ms    -  -  -  -  -  Execute pipeline processors
+   1 15:28:16,232 DEBUG               -> -> -> -> -> Execute pipeline processors
+   1 15:28:16,232 DEBUG                              params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:16,232 DEBUG                              params processorList: ICollection, 1 elements
+   1 15:28:16,232 DEBUG                              params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:16,232 DEBUG                              params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:16,236 DEBUG               -> -> -> -> -> -> Get web.config
+   1 15:28:16,327 DEBUG                                 Caller: ID: 8, production (Sitecore CMS 8.2 rev. 160729)
+   1 15:28:16,327 DEBUG                                 params webRootPath: null
+   1 15:28:16,354 DEBUG                                 return object (SIM.XmlDocumentEx)
+   1 15:28:16,354 DEBUG    26.85ms    -  -  -  -  -  -  Get web.config
+   1 15:28:20,569 INFO  Attaching the 'production_core' database with 'C:\inetpub\wwwroot\production\Databases\Sitecore.core.mdf' filename
+   1 15:28:20,703 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:20,934 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:20,940 INFO  SQL query is executed: create database [production_core] on (filename = N'C:\inetpub\wwwroot\production\Databases\Sitecore.core.mdf') for attach
+   1 15:28:32,629 INFO  Attaching the 'production_master' database with 'C:\inetpub\wwwroot\production\Databases\Sitecore.master.mdf' filename
+   1 15:28:32,631 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:32,634 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:32,645 INFO  SQL query is executed: create database [production_master] on (filename = N'C:\inetpub\wwwroot\production\Databases\Sitecore.master.mdf') for attach
+   1 15:28:36,377 INFO  Attaching the 'production_web' database with 'C:\inetpub\wwwroot\production\Databases\Sitecore.web.mdf' filename
+   1 15:28:36,379 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:36,381 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:36,384 INFO  SQL query is executed: create database [production_web] on (filename = N'C:\inetpub\wwwroot\production\Databases\Sitecore.web.mdf') for attach
+   1 15:28:40,160 INFO  Attaching the 'production_reporting' database with 'C:\inetpub\wwwroot\production\Databases\Sitecore.reporting.mdf' filename
+   1 15:28:40,164 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:40,171 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:40,174 INFO  SQL query is executed: create database [production_reporting] on (filename = N'C:\inetpub\wwwroot\production\Databases\Sitecore.reporting.mdf') for attach
+   1 15:28:44,403 DEBUG               -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:44,403 DEBUG                                 params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:44,403 DEBUG                                 params processorList: ICollection, 0 elements
+   1 15:28:44,403 DEBUG                                 params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:44,403 DEBUG                                 params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:44,403 DEBUG                                 return True (System.Boolean)
+   1 15:28:44,403 DEBUG     0.15ms    -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:44,403 DEBUG                              return True (System.Boolean)
+   1 15:28:44,403 DEBUG 28171.89ms    -  -  -  -  -  Execute pipeline processors
+   1 15:28:44,403 DEBUG               -> -> -> -> -> Execute pipeline processors
+   1 15:28:44,403 DEBUG                              params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:44,403 DEBUG                              params processorList: ICollection, 0 elements
+   1 15:28:44,404 DEBUG                              params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:44,404 DEBUG                              params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:44,404 DEBUG                              return True (System.Boolean)
+   1 15:28:44,404 DEBUG     0.09ms    -  -  -  -  -  Execute pipeline processors
+   1 15:28:44,404 DEBUG               -> -> -> -> -> Execute pipeline processors
+   1 15:28:44,404 DEBUG                              params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:44,404 DEBUG                              params processorList: ICollection, 1 elements
+   1 15:28:44,404 DEBUG                              params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:44,404 DEBUG                              params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:44,407 DEBUG               -> -> -> -> -> -> Execute pipeline processors
+   1 15:28:44,408 DEBUG                                 params args: object (SIM.Pipelines.Install.InstallArgs)
+   1 15:28:44,408 DEBUG                                 params processorList: ICollection, 0 elements
+   1 15:28:44,408 DEBUG                                 params controller: object (SIM.Core.Common.AggregatePipelineController)
+   1 15:28:44,408 DEBUG                                 params startThisAndNestedProcessors: True (System.Boolean)
+   1 15:28:44,408 DEBUG                                 return True (System.Boolean)
+   1 15:28:44,408 DEBUG     0.19ms    -  -  -  -  -  -  Execute pipeline processors
+   1 15:28:44,408 DEBUG                              return True (System.Boolean)
+   1 15:28:44,408 DEBUG     4.20ms    -  -  -  -  -  Execute pipeline processors
+   1 15:28:44,408 DEBUG 291808.34ms    -  -  -  -  Execute pipeline steps
+   1 15:28:44,409 DEBUG 292092.96ms    -  -  -  Execute pipeline processors
+   1 15:28:44,410 DEBUG 292099.79ms    -  -  Start pipeline
+   1 15:28:44,410 DEBUG 292192.31ms    -  Start pipeline

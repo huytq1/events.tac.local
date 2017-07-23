@@ -1,0 +1,27 @@
+﻿@model events.tac.local.Models.EventIntro
+
+<!-- [Event Info] -->
+<header>
+    <h1>@Model.Heading</h1>
+</header>
+<!-- [Event Details] -->
+<div class="well">
+    <p class="text-muted">Start Date: @Model.StartDate</p>
+    <p class="text-muted">Duration: @Model.Duration</p>
+    <span class="text-muted">Difficulty:</span>
+    @Model.Difficulty
+</div>
+<!-- [/Event Details] -->
+<!-- [Event Content] -->
+<div class="lead">
+    @Model.Body
+</div>
+<div class="article image">
+    @Model.EventImage
+</div>
+<div class="highlights">
+    <h4>Trip Highlights</h4>
+    @Model.Highlights
+</div>
+<!-- [/Event Content] -->
+<!-- [/Event Info] -->

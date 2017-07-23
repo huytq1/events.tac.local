@@ -1,0 +1,22 @@
+﻿@model NavigationMenu
+@using events.tac.local.Models
+
+<h4><a href="@Model.URL">@Model.Title</a></h4>
+<div class="sidebar sidebar-static">
+    @RenderNavigation(Model.Children)
+</div>
+
+@helper RenderNavigation(IEnumerable<NavigationMenu> items)
+{    <ul>
+        @foreach (var i in items)
+        {
+            <li class="@(Model.Children != null?"open":"")">
+                <a href="@i.URL">@i.Title</a>
+                @if (i.Children != null)
+                {
+                    @RenderNavigation(i.Children)
+                }
+            </li>
+        }
+    </ul>
+}

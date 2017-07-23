@@ -1,0 +1,86 @@
+   1 15:23:45,883 INFO  **********************************************************************
+   1 15:23:45,909 INFO  **********************************************************************
+   1 15:23:45,910 INFO  Sitecore Instance Manager started
+   1 15:23:45,910 INFO  Version: 1.5.0.112
+   1 15:23:45,910 INFO  Revision: 0.112
+   1 15:23:45,910 INFO  Label: 
+   1 15:23:45,910 INFO  IsQA: False
+   1 15:23:45,910 INFO  Executable: C:\Users\erics\AppData\Roaming\Sitecore\Sitecore Instance manager\Apps\SIMCMD\sim.exe
+   1 15:23:45,910 INFO  Arguments: delete|-n|production
+   1 15:23:45,910 INFO  Directory: C:\Users\erics\Documents\beanstalk\events.tac.local\events.tac.local\Build
+   1 15:23:45,911 INFO  **********************************************************************
+   1 15:23:45,911 INFO  **********************************************************************
+   1 15:23:47,903 INFO  DeleteCommandFacade command has failed with unhandled exception
+System.InvalidOperationException: Cannot find instances by name: production
+   at SIM.Core.Common.AbstractMultiInstanceActionCommand.GetInstances(String listString)
+   at SIM.Core.Common.AbstractMultiInstanceActionCommand.DoExecute(CommandResult result)
+   at SIM.Core.Common.AbstractCommand.Execute()
+   1 15:23:48,959 INFO  **********************************************************************
+   1 15:23:48,983 INFO  **********************************************************************
+   1 15:23:48,983 INFO  Sitecore Instance Manager started
+   1 15:23:48,983 INFO  Version: 1.5.0.112
+   1 15:23:48,983 INFO  Revision: 0.112
+   1 15:23:48,983 INFO  Label: 
+   1 15:23:48,983 INFO  IsQA: False
+   1 15:23:48,984 INFO  Executable: C:\Users\erics\AppData\Roaming\Sitecore\Sitecore Instance manager\Apps\SIMCMD\sim.exe
+   1 15:23:48,984 INFO  Arguments: install|-n|production
+   1 15:23:48,984 INFO  Directory: C:\Users\erics\Documents\beanstalk\events.tac.local\events.tac.local\Build
+   1 15:23:48,984 INFO  **********************************************************************
+   1 15:23:48,984 INFO  **********************************************************************
+   1 15:23:52,217 INFO  Pipeline 'install' starts, isAsync: False
+   1 15:23:52,709 INFO  Creating folder Sitecore 8.2 rev. 160729
+   1 15:23:52,710 INFO  Creating folder Sitecore 8.2 rev. 160729\Website
+   1 15:23:52,894 INFO  Granting full access for 'NT AUTHORITY\NETWORK SERVICE' identity to the 'Sitecore 8.2 rev. 160729\Website' folder
+   1 15:23:52,912 INFO  Creating folder Sitecore 8.2 rev. 160729\Data
+   1 15:23:52,918 INFO  Granting full access for 'NT AUTHORITY\NETWORK SERVICE' identity to the 'Sitecore 8.2 rev. 160729\Data' folder
+   1 15:23:52,941 INFO  Extracting C:\Sitecore\Repo\Sitecore 8.2 rev. 160729.zip
+   1 15:28:14,872 WARN  Unexpected file or directory is ignored: Sitecore 8.2 rev. 160729/
+   1 15:28:16,072 INFO  Appending host: production
+   1 15:28:20,569 INFO  Attaching the 'production_core' database with 'C:\inetpub\wwwroot\production\Databases\Sitecore.core.mdf' filename
+   1 15:28:20,703 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:20,934 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:20,940 INFO  SQL query is executed: create database [production_core] on (filename = N'C:\inetpub\wwwroot\production\Databases\Sitecore.core.mdf') for attach
+   1 15:28:32,629 INFO  Attaching the 'production_master' database with 'C:\inetpub\wwwroot\production\Databases\Sitecore.master.mdf' filename
+   1 15:28:32,631 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:32,634 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:32,645 INFO  SQL query is executed: create database [production_master] on (filename = N'C:\inetpub\wwwroot\production\Databases\Sitecore.master.mdf') for attach
+   1 15:28:36,377 INFO  Attaching the 'production_web' database with 'C:\inetpub\wwwroot\production\Databases\Sitecore.web.mdf' filename
+   1 15:28:36,379 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:36,381 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:36,384 INFO  SQL query is executed: create database [production_web] on (filename = N'C:\inetpub\wwwroot\production\Databases\Sitecore.web.mdf') for attach
+   1 15:28:40,160 INFO  Attaching the 'production_reporting' database with 'C:\inetpub\wwwroot\production\Databases\Sitecore.reporting.mdf' filename
+   1 15:28:40,164 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:40,171 WARN  An error occurred during paring NT Service\MSSQL$SQLEXPRESS security identifier
+System.ArgumentException: Value was invalid.
+Parameter name: sddlForm
+   at System.Security.Principal.SecurityIdentifier..ctor(String sddlForm)
+   at SIM.FileSystem.SecurityProvider.GetIdentityReference(String name)
+   1 15:28:40,174 INFO  SQL query is executed: create database [production_reporting] on (filename = N'C:\inetpub\wwwroot\production\Databases\Sitecore.reporting.mdf') for attach

@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Result";
+    Layout = "~/Areas/Importer/Views/Shared/Layout.cshtml";
+}
+
+Imported
+<ul>
+    @foreach (var ev in ViewBag.events)
+    {
+        <li>@ev</li>
+    }
+</ul>

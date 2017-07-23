@@ -1,0 +1,141 @@
+----item----
+version: 1
+id: {E130A246-4356-4A10-B238-E7558DF023B5}
+database: master
+path: /sitecore/content/Events/Home/Events/Climbing/2017/07/15/06/26/Climb Mount Everest
+parent: {C4D12C3D-AF60-4E35-A343-356B6507D329}
+name: Climb Mount Everest
+master: {00000000-0000-0000-0000-000000000000}
+template: {884674D4-3556-47F0-92F1-EEDFA2D67BFA}
+templatekey: Event Detail
+created: 20170715T062601:636356967610400000
+
+----version----
+language: en
+version: 1
+revision: c2bacd2e-a7af-454a-b3f4-cfd634ce36b0
+
+----field----
+field: {2AA64CEC-E98F-4964-8E39-51EB303D17DE}
+name: ContentBody
+key: contentbody
+content-length: 23
+
+<p>content body<br></p>
+----field----
+field: {1384A77F-8E0C-40BA-B628-3C5ED330DD86}
+name: ContentHeading
+key: contentheading
+content-length: 19
+
+Climb Mount Everest
+----field----
+field: {8D006036-4C2F-43B1-BAF5-B86104F21212}
+name: Event Image
+key: event image
+content-length: 178
+
+<image mediapath="" alt="climbing-events" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{B426B94D-24C9-4E3F-BE3F-39A4D86CD0C3}" ></image>
+----field----
+field: {F35DACEC-61A9-49C5-90BD-05E58F0C7727}
+name: MetaTitle
+key: metatitle
+content-length: 19
+
+Climb Mount Everest
+----field----
+field: {23842805-7509-4414-8F4B-804C632C9C04}
+name: Related Events
+key: related events
+content-length: 116
+
+{A7C50FF3-7671-4469-8297-0D1A3E2DEA61}|{E130A246-4356-4A10-B238-E7558DF023B5}|{97806434-8E82-4477-AC1C-DEC45B02882A}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170715T062601Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c2bacd2e-a7af-454a-b3f4-cfd634ce36b0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170719T234632Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
+----version----
+language: zh-CN
+version: 1
+revision: e5a9f318-fd6a-4133-902b-ea0170f1fb70
+
+----field----
+field: {2AA64CEC-E98F-4964-8E39-51EB303D17DE}
+name: ContentBody
+key: contentbody
+content-length: 2
+
+中文
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170715T091358Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e5a9f318-fd6a-4133-902b-ea0170f1fb70
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170715T091641Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
